@@ -10,7 +10,7 @@ void main() {
   SystemChrome.setSystemUIOverlayStyle(
     const SystemUiOverlayStyle(
       statusBarColor: Colors.transparent,
-      systemNavigationBarColor: CupertinoColors.darkBackgroundGray,
+      systemNavigationBarColor: CupertinoColors.black,
     ),
   );
   runApp(const MainApp());
@@ -27,6 +27,8 @@ class MainApp extends StatelessWidget {
       theme: CupertinoThemeData(
         primaryColor: CupertinoColors.activeOrange,
         brightness: Brightness.dark,
+        barBackgroundColor: CupertinoColors.black,
+        scaffoldBackgroundColor: CupertinoColors.black,
         textTheme: CupertinoTextThemeData(
           primaryColor: CupertinoColors.white,
           textStyle: TextStyle(
@@ -51,7 +53,6 @@ class _TabScaffoldState extends State<TabScaffold> {
     return CupertinoTabScaffold(
       tabBar: CupertinoTabBar(
         height: 54,
-        backgroundColor: CupertinoColors.darkBackgroundGray,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Padding(
