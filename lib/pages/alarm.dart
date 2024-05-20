@@ -22,6 +22,7 @@ class _AlarmState extends State<AlarmPage> {
             trailing: CupertinoButton(
               onPressed: () {},
               padding: EdgeInsets.zero,
+              alignment: Alignment.centerRight,
               child: const Icon(
                 CupertinoIcons.add,
                 color: CupertinoColors.activeOrange,
@@ -30,6 +31,7 @@ class _AlarmState extends State<AlarmPage> {
             leading: CupertinoButton(
               onPressed: () {},
               padding: EdgeInsets.zero,
+              alignment: Alignment.centerLeft,
               child: const Text(
                 "Edit",
                 style: TextStyle(

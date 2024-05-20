@@ -22,6 +22,7 @@ class _WorldClockState extends State<WorldClockPage> {
             trailing: CupertinoButton(
               onPressed: () {},
               padding: EdgeInsets.zero,
+              alignment: Alignment.centerRight,
               child: const Icon(
                 CupertinoIcons.add,
                 color: CupertinoColors.activeOrange,
@@ -30,6 +31,7 @@ class _WorldClockState extends State<WorldClockPage> {
             leading: CupertinoButton(
               onPressed: () {},
               padding: EdgeInsets.zero,
+              alignment: Alignment.centerLeft,
               child: const Text(
                 "Edit",
                 style: TextStyle(
